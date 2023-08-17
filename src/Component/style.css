@@ -1,0 +1,116 @@
+@import url(./color.css);
+.main-Container{
+    padding:0;
+    background-color:var(--backgroundColor);
+    color:aliceblue;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.card-Container{
+    width:25%;
+    height:80%     ;
+    background-color: rgb(17, 18, 17);
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3%;
+    flex-direction: column;
+}
+.image-Container{
+    position:relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 5%;
+}
+.hover-img,.main-img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3%;
+}
+.hover-img{
+    position: absolute;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    .image-Container:hover & {
+      opacity: 2.0;
+    }
+}
+.info-Container{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-left: 20px;
+    line-height: -40em;
+}
+.info-Container h2{
+    &:hover{
+        color:var(--heading);
+        cursor: pointer; 
+        }
+}
+.info-Container p{
+margin-top: 0;
+margin-left: 2px;
+margin-right: 20px;
+margin-bottom: 0;
+
+}
+
+.other-details { 
+   margin-top: -20px;
+   display: flex;
+  justify-content: space-between;
+   align-items: center; 
+   margin-bottom: 0;
+   flex-wrap: wrap;
+}
+.right-container,.left-container{
+
+ display: flex;
+ 
+}
+.right-container h4{ 
+     margin-right: 20px;  
+ }
+.border-details{
+    margin-left:20px ;
+    margin-top: -20px;
+    margin-right: 20px;
+    
+}
+.author-details{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+    margin-left: -20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.profile{
+    height:30px;
+    margin-top: -10px;
+}
+.author-name{
+    margin-top: -0.5px;
+    font-size: 14px;
+    margin-left: -20px;
+    &:hover{
+        color:var(--heading);
+        cursor: pointer;
+    }
+}
+
